@@ -23,6 +23,12 @@
 
 * [optical-music-recognition topic en GitHub](https://github.com/topics/optical-music-recognition)
 
+## Aplicaciones web
+
+* [Flask](https://dzone.com/articles/python-flask-code-generator)
+* [Django](https://docs.djangoproject.com/es/3.0/intro/)
+
 ## Otros
 
 * [Proyecto Carabela](http://carabela.prhlt.upv.es/es)
+
