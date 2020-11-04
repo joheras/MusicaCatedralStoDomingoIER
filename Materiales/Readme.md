@@ -8,7 +8,7 @@
 
 ## Knowledge base construction
 
-* [https://medium.com/@CereLabs/knowledge-base-construction-146177844cc6](Knowledge Base Construction)
+* [Knowledge Base Construction](https://medium.com/@CereLabs/knowledge-base-construction-146177844cc6)
 * [Information extraction for knowledge base construction in the music domain](https://www.sciencedirect.com/science/article/pii/S0169023X16300416?via%3Dihub)
 * [Extracting campaign finance data from gnarly PDFs using deep learning](http://jonathanstray.com/extracting-campaign-finance-data-from-gnarly-pdfs-using-deep-learning)
 
