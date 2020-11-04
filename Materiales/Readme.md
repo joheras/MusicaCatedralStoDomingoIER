@@ -22,3 +22,7 @@
 ### Optical Music Recognition Libraries
 
 * [optical-music-recognition topic en GitHub](https://github.com/topics/optical-music-recognition)
+
+## Otros
+
+* [Proyecto Carabela](http://carabela.prhlt.upv.es/es)
