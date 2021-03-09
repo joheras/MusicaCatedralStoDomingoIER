@@ -19,6 +19,7 @@
 * [Optical Music Recognition: State of the Art and Major Challenges](https://towardsdatascience.com/optical-music-recognition-state-of-the-art-and-major-challenges-aa100923c78d)
 * [Bibliography on Optical Music Recognition](https://omr-research.github.io/omr-research-sorted-by-year.html)
 * [OMR and Pyhton](https://heartbeat.fritz.ai/play-sheet-music-with-python-opencv-and-an-optical-music-recognition-model-a55a3bea8fe)
+* [Music Transcription](https://medium.com/@dhruvverma/music-transcription-using-a-convolutional-neural-network-b115968829f4)
 
 ### Optical Music Recognition Libraries
 
