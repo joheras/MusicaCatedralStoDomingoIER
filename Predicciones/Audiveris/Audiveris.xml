@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.0.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.0.1">
+  <work>
+    <work-number>maestro Râbago. Año 1808”: SSAB, dos violines y acompañamiento. Sôlo las</work-number>
+  </work>
+  <identification>
+    <creator type="lyricist">armonio, copiadas en 1910.</creator>
+    <encoding>
+      <software>Audiveris 5.2.1</software>
+      <supports type="yes" element="print" attribute="new-system" value="yes"></supports>
+      <supports type="yes" element="print" attribute="new-page" value="yes"></supports>
+      <software>ProxyMusic 3.0.1.8e1a2c5</software>
+      <encoding-date>2021-06-24</encoding-date>
+    </encoding>
+    <source>C:\Users\gosantam\Desktop\Plantilla\Obra_804.jpg</source>
+    <miscellaneous>
+      <miscellaneous-field name="source-file">C:\Users\gosantam\Desktop\Plantilla\Obra_804.jpg</miscellaneous-field>
+      <miscellaneous-field name="source-sheet-1">1 2 3</miscellaneous-field>
+    </miscellaneous>
+  </identification>
+  <defaults>
+    <scaling>
+      <millimeters>3.7253</millimeters>
+      <tenths>40</tenths>
+    </scaling>
+    <page-layout>
+      <page-height>550</page-height>
+      <page-width>982</page-width>
+      <page-margins type="both">
+        <left-margin>80</left-margin>
+        <right-margin>80</right-margin>
+        <top-margin>80</top-margin>
+        <bottom-margin>80</bottom-margin>
+      </page-margins>
+    </page-layout>
+    <lyric-font font-family="Default" font-size="10"></lyric-font>
+  </defaults>
+  <credit page="1">
+    <credit-words default-x="101" default-y="521" font-family="serif" font-style="italic" font-size="7">804. ”Cuatro Admirables para los misereres de cuaresma, a cuatro, de el</credit-words>
+  </credit>
+  <credit page="1">
+    <credit-words default-x="38" default-y="490" font-family="serif" font-size="7">maestro Râbago. Año 1808”: SSAB, dos violines y acompañamiento. Sôlo las</credit-words>
+  </credit>
+  <credit page="1">
+    <credit-type>lyricist</credit-type>
+    <credit-words default-x="39" default-y="430" font-family="serif" font-size="7">armonio, copiadas en 1910.</credit-words>
+  </credit>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Voice</part-name>
+      <score-instrument id="P1-I1">
+        <instrument-name>Voice Oohs</instrument-name>
+      </score-instrument>
+      <midi-instrument id="P1-I1">
+        <midi-channel>1</midi-channel>
+        <midi-program>54</midi-program>
+        <volume>78</volume>
+      </midi-instrument>
+    </score-part>
+  </part-list>
+  <!--= = = = = = = = = = = = = = = = = = = = = = = = = = = = =-->
+  <part id="P1">
+    <!--=======================================================-->
+    <measure number="1" width="268">
+      <print>
+        <system-layout>
+          <system-margins>
+            <left-margin>18</left-margin>
+            <right-margin>-5</right-margin>
+          </system-margins>
+          <top-system-distance>60</top-system-distance>
+        </system-layout>
+        <measure-numbering>system</measure-numbering>
+      </print>
+      <attributes>
+        <divisions>2</divisions>
+        <staff-details print-object="yes"></staff-details>
+      </attributes>
+      <direction placement="above">
+        <direction-type>
+          <words></words>
+        </direction-type>
+        <sound tempo="120"></sound>
+      </direction>
+      <note default-x="85">
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>8</duration>
+        <voice>1</voice>
+        <type>whole</type>
+      </note>
+      <note default-x="135">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <stem default-y="-36">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>Oh</text>
+        </lyric>
+      </note>
+      <note default-x="182">
+        <pitch>
+          <step>G</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-26">down</stem>
+      </note>
+      <note default-x="226">
+        <pitch>
+          <step>F</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <stem default-y="-31">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>admirable</text>
+        </lyric>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="2" width="124">
+      <note default-x="18">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <stem default-y="-35">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>Redentor</text>
+        </lyric>
+      </note>
+      <note default-x="71">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <stem default-y="-35">down</stem>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="3" width="135">
+      <note default-x="82">
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <accidental>natural</accidental>
+        <stem default-y="-41">down</stem>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="4" width="125">
+      <note default-x="18">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <stem default-y="-35">down</stem>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="5" width="268">
+      <print new-system="yes">
+        <system-layout>
+          <system-margins>
+            <left-margin>18</left-margin>
+            <right-margin>-5</right-margin>
+          </system-margins>
+          <system-distance>79</system-distance>
+        </system-layout>
+      </print>
+      <attributes>
+        <time>
+          <beats>3</beats>
+          <beat-type>4</beat-type>
+        </time>
+        <staff-details print-object="yes"></staff-details>
+      </attributes>
+      <note default-x="139">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-35">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>Oh</text>
+        </lyric>
+      </note>
+      <note default-x="182">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-35">down</stem>
+      </note>
+      <note default-x="225">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-35">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>admirable</text>
+        </lyric>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="6" width="110">
+      <note default-x="17">
+        <pitch>
+          <step>F</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <stem default-y="-31">down</stem>
+      </note>
+      <note default-x="67">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-35">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>Redemor</text>
+        </lyric>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="7" width="116">
+      <note default-x="18">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>4</duration>
+        <voice>1</voice>
+        <type>half</type>
+        <stem default-y="-35">down</stem>
+      </note>
+      <note default-x="74">
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-41">down</stem>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="8" width="115">
+      <note default-x="71">
+        <rest>
+          <display-step>B</display-step>
+          <display-octave>4</display-octave>
+        </rest>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="9" width="235">
+      <print new-system="yes">
+        <system-layout>
+          <system-margins>
+            <left-margin>15</left-margin>
+            <right-margin>-3</right-margin>
+          </system-margins>
+          <system-distance>89</system-distance>
+        </system-layout>
+      </print>
+      <attributes>
+        <clef>
+          <sign>C</sign>
+          <line>1</line>
+        </clef>
+        <staff-details print-object="yes"></staff-details>
+      </attributes>
+      <note default-x="106">
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-32">down</stem>
+        <lyric number="1" placement="below" default-y="-78">
+          <syllabic>single</syllabic>
+          <text>Oh</text>
+        </lyric>
+        <lyric number="2" placement="below" default-y="-138">
+          <syllabic>single</syllabic>
+          <text>mâs</text>
+        </lyric>
+      </note>
+      <note default-x="150">
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-32">down</stem>
+        <lyric number="2" placement="below" default-y="-138">
+          <syllabic>single</syllabic>
+          <text>que</text>
+        </lyric>
+      </note>
+      <note default-x="192">
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-36">down</stem>
+        <lyric number="1" placement="below" default-y="-78">
+          <syllabic>single</syllabic>
+          <text>admirable</text>
+        </lyric>
+        <lyric number="2" placement="below" default-y="-138">
+          <syllabic>single</syllabic>
+          <text>tres.</text>
+        </lyric>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="10" width="147">
+      <note default-x="19">
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-35">down</stem>
+        <lyric number="1" placement="below" default-y="-78">
+          <syllabic>single</syllabic>
+          <text>Redentor</text>
+        </lyric>
+        <lyric number="2" placement="below" default-y="-138">
+          <syllabic>single</syllabic>
+          <text>Pero</text>
+        </lyric>
+      </note>
+      <note default-x="62">
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-42">down</stem>
+      </note>
+    </measure>
+    <!--=======================================================-->
+    <measure number="11" width="425">
+      <note default-x="18">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem default-y="-41">down</stem>
+        <beam number="1">begin</beam>
+      </note>
+      <note default-x="52">
+        <pitch>
+          <step>D</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem default-y="-42">down</stem>
+        <beam number="1">continue</beam>
+        <lyric number="2" placement="below" default-y="-138">
+          <syllabic>single</syllabic>
+          <text>también</text>
+        </lyric>
+      </note>
+      <note default-x="89">
+        <pitch>
+          <step>C</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem default-y="-42">down</stem>
+        <beam number="1">continue</beam>
+        <lyric number="2" placement="below" default-y="-138">
+          <syllabic>single</syllabic>
+          <text>el</text>
+        </lyric>
+      </note>
+      <note default-x="122">
+        <pitch>
+          <step>B</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem default-y="-41">down</stem>
+        <beam number="1">end</beam>
+        <lyric number="2" placement="below" default-y="-138">
+          <syllabic>single</syllabic>
+          <text>n9</text>
+        </lyric>
+      </note>
+    </measure>
+  </part>
+</score-partwise>
