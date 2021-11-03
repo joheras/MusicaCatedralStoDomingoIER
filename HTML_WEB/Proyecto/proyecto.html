@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>Domingo Unirioja Proyecto</title>
+		<meta charset="utf-8"/>
+<meta name="viewport" content="width=1010"/>
+<link rel="SHORTCUT ICON" href="/images/favicon.png"/>
+
+<!-- styles -->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lusitana:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="scripts/external/select2.js"></script>
+<script src="scripts/external/jquery.ezmark.min.js"></script>
+<script src="scripts/external/placeholders.min.js"></script>
+<script src="scripts/scripts-basic.js"></script>
+
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-38223992-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); 
+		ga.type = 'text/javascript'; 
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<!--[if lte IE 9]>
+	<link rel="stylesheet" type="text/css" href="/css/ie9.css" />
+<![endif]-->
+<!-- vim: set ts=3: -->
+
+
+	</head>
+
+	<body>
+		<div class="page container" id="home-page">
+			<header class="simple">
+	<nav id="primary-nav">
+		<ul class="perf">
+			<li class="logo"><a><img src="../images/ier.jpg"></a></li>
+			<li><a href="../index.html">Página principal</a></li>
+			<li><a href="../Resumen/Resumen.html">Resumen</a></li>
+			<li><a href="../libro/Libro.html">Libro Completo</a></li>
+		</ul>
+	</nav> <!-- primary-nav -->
+</header>
+<!-- vim: set ts=2: -->
+
+			<section id="content">
+				
+<article class="about">
+	<h2 class="brown-heading">Acerca del el proyecto</h2>
+	<p> 
+	El punto de partida es, naturalmente, uno de los 500 ejemplares del libro. Desgraciadamente, en aquella época, hace más de 30 años, no era
+	tan frecuente contar con versiones digitales de los documentos, a diferencia de hoy donde la mayoría de publicaciones se pueden leer desde el ordenador.
+	Es por eso por lo que el primer paso para digitalizar nuestro libro es el de escanear correctamente cada una de sus hojas. De esta manera obtendremos una imagen
+	para cada página.
+	</p>
+	<p> 
+	A partir de este punto podríamos pensar que nos queda poco trabajo por hacer. Para poner al lector en contexto, cuando tenemos un archivo pdf, podemos 
+	realizar búsquedas de texto sin problemas, eso como mínimo. También podemos estructurar este tipo de documentos por capítulos o secciones y acceder rápidamente a la
+	información. De igual forma, cuando tenemos un archivo mp3, podemos reproducir el audio y escuchar su música. También podemos acceder a un segundo concreto
+	de la melodía, etc. En nuestro caso disponemos de imágenes y, aunque nostros sepamos leer la música y el texto que contienen, para el ordenador una imagen simplemente representa un conjunto
+	de píxeles, que no deja de ser una enorme matriz de números, por lo que saber en qué partes de la imagen está el texto (o la música) y saber qué frases en concreto están escritas, 
+	no es un problema para nada trivial.
+	</p>
+	<p> 
+	Ahora bien, entonces ¿Qué podemos hacer? ¿Existe alguna forma de extraer la información contenida en imágenes? De hecho, si existe, y es una rama de conocimiento
+	bastante amplia. Se llama "Visión por Computador" (del inglés, "Computer Vision"), aunque también recibe otros nombres, como por ejemplo: "procesamiento de
+	imágenes digitales". Dentro de la visión por computador encontramos diferentes técnicas y, algunas de ellas, sobre todo a día de hoy, son muy conocidas. Por ejemplo, en la visión por computador podemos utilizar técnicas de inteligencia artificial. Nosotros una herramienta muy potente conocida como
+	"Aprendizaje Profundo" (del inglés, "Deep Learning"), el cual, aplicado a la visión por computador, ofrece muy buenos resultados.
+	</p>
+	<p> 
+	Vamos a necesitar localizar los párrafos y pentagramas del libro, para después, aplicar Aprendizaje Profundo y ser capaces de extraer el texto y
+	la música que contienen. Hay muchas posilidades, pero nosotros hemos utilizado las técnicas más conocidas. Para reconocer el texto de los párrafos hemos usado 
+	OCR y, para la música de los pentagramas, hemos utilizado OMR.	
+	</p>
+</article>
+
+<article class="about">
+<h3 class="brown-heading">OCR</h3>
+
+<p>
+El OCR, del inglés Optical Character Recognition y traducido al español como Reconocimiento Óptico de Caracteres, es una tecnología bastante consolidada
+la cual tiene como finalidad reconocer el texto contenido en ficheros con formato de imagen. En este proyecto hemos utilizado la librería de python 
+<a href=https://www.pyimagesearch.com/?s=ocr>pytesseract</a>.
+</p>
+
+</article>
+
+<article class="about">
+<h3 class="brown-heading">OMR</h3>
+
+<p>
+ El OMR, del inglés Optical Music Recognition y traducido al español como Reconocimiento Óptico de Música, 
+ es una tecnología la cual tiene como finalidad reconocer la música contenida en ficheros con formato de imagen.
+ Esta parte del proyecto ha sido la que más tiempo nos ha llevado. A diferencia del OCR, el OMR está menos avanzado y hay muchos problemas abiertos
+ en los que se sigue investigando. Es por eso por lo que no fuimos capaces de encontrar ningún programa que nos realizara la función de transformar en
+ música esas imágenes de pentagramas. En consecuencia, tuvimos que realizar nuestros propios modelos de Aprendizaje Profundo para extracción de música.
+</p>
+
+</article>
+
+<article class="about">
+<h3 class="brown-heading">Código del proyecto</h3>
+
+<p>
+El enlace para acceder tanto al código del proyecto, como a la bibliografía que se ha utilizado para la realización del mismo,
+es el siguiente:
+</p>
+
+<p>
+<span style="display:block; margin-left:60px;"><a class="text-link" href=https://github.com/joheras/MusicaCatedralStoDomingoIER>https://github.com/joheras/MusicaCatedralStoDomingoIER</a>
+</p>
+
+<p>
+En dicho enlace se pueden encontrar todas las técnicas de procesamiento de imagen que se han utilizado para extraer la información del libro. La memoría donde se explica
+todo más detalladamente se puede descargar desde <a class="text-link" href=https://www.dropbox.com/s/0o2230pqxg1yfgk/TFM_Gonzalo.pdf?dl=1>el siguiente enlace</a>. También, puedes
+encontrarla en el <a class="text-link" href=https://investigacion.unirioja.es/>portal de investigación</a> de la <a class="text-link" href=https://www.unirioja.es/>Universidad de La Rioja</a>.
+</p>
+
+
+
+</article>
+
+
+<div style="padding:100px;"></div>
+<!-- vim: set ts=2: -->
+
+			</section> <!-- content -->
+			<footer>
+	<nav class="secondary-nav">
+		<ul>
+			<li class="logo"><a href="https://www.larioja.org/i-estudios-riojanos/es">Instituto de Estudios Riojanos</a></li>
+			<li class="active"><a name="Proyecto">Proyecto</a></li>
+			<li><a href="../Contacto/Contacto.html">Contacto</a></li>
+		</ul>
+	</nav> <!-- secondary-nav -->
+</footer>
+<!-- vim: set ts=2: -->
+
+		</div> <!-- page -->
+	</body>
+
+</html>
+<!-- vim: set ts=2: -->
