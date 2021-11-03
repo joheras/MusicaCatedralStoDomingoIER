@@ -1,1 +1,436 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+		<!-- vim: set ts=3: -->
+		<title>Domingo Unirioja Libro</title>
+		<meta charset="utf-8"/>
+<meta name="viewport" content="width=1010"/>
+<link rel="SHORTCUT ICON" href="images/favicon.png"/>
+
+<!-- styles -->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lusitana:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="scripts/external/select2.js"></script>
+<script src="scripts/external/jquery.ezmark.min.js"></script>
+<script src="scripts/external/placeholders.min.js"></script>
+<script src="scripts/scripts-basic.js"></script>
+
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-38223992-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); 
+		ga.type = 'text/javascript'; 
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<!--[if lte IE 9]>
+	<link rel="stylesheet" type="text/css" href="/css/ie9.css" />
+<![endif]-->
+<!-- vim: set ts=3: -->
+
+
+</head>
+
+<body>
+		<div class="page container" id="home-page">
+			<header class="simple">
+	<nav id="primary-nav">
+		<ul class="perf">
+			<li class="logo"><a><img src="../images/ier.jpg"></a></li>
+			<li><a href="../index.html">Página principal</a></li>
+			<li><a href="../Resumen/Resumen.html">Resumen</a></li>			
+			<li class="active"><a name="Resumen">Libro Completo</a></li>
+		</ul>
+	</nav> <!-- primary-nav -->
+</header>
+<!-- vim: set ts=2: -->
+
+<section id="content">
+				<style>
+.myquestion {
+	font-weight: 700;
+	font-style: italic;
+}
+</style>
+
+<article class="about">
+  <div id="paginas">
+    <h2 class="brown-heading" align="center">Seleccione un Capítulo</h2>
+    <br>
+    <div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo I" id="cap1"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo II" id="cap2"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo III" id="cap3"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo IV" id="cap4"/></div>
+    <div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo V" id="cap5"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo VI" id="cap6"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo VII" id="cap7"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo VIII" id="cap8"/></div>
+    <div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo IX" id="cap9"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo X" id="cap10"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XI" id="cap11"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XII" id="cap12"/></div>
+    <div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XIII" id="cap13"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XIV" id="cap14"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XV" id="cap15"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XVI" id="cap16"/></div>
+  </div>
+</article>
+<!-- vim: set ts=2: -->
+
+</section> <!-- content -->
+			<footer>
+	<nav class="secondary-nav">
+		<ul>
+			<li class="logo"><a href="https://www.larioja.org/i-estudios-riojanos/es">Instituto de Estudios Riojanos</a></li>
+			<li><a href="../Proyecto/proyecto.html">Proyecto</a></li>
+			<li><a href="../Contacto/Contacto.html">Contacto</a></li>
+		</ul>
+	</nav> <!-- secondary-nav -->
+</footer>
+<!-- vim: set ts=2: -->
+
+		</div> <!-- page -->
+
+<script src="https://verovio-script.humdrum.org/scripts/verovio-toolkit.js"></script>
+<script src="https://plugin.humdrum.org/scripts/humdrum-notation-plugin.js"></script>
+<script>var vrvToolkit = new verovio.toolkit()</script>		
+<script src="scripts/scripts-common.js"></script>
+
+<script>
+function inicio()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Seleccione un Capítulo</h2>';
+  container.innerHTML += '<br>';
+  container.innerHTML += '<div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo I" id="cap1"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo II" id="cap2"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo III" id="cap3"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo IV" id="cap4"/></div>';
+  container.innerHTML += '<div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo V" id="cap5"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo VI" id="cap6"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo VII" id="cap7"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo VIII" id="cap8"/></div>';
+  container.innerHTML += '<div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo IX" id="cap9"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo X" id="cap10"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XI" id="cap11"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XII" id="cap12"/></div>';
+  container.innerHTML += '<div class="form-group text-center"><input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XIII" id="cap13"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XIV" id="cap14"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XV" id="cap15"/> &nbsp <input style="width:150px;" type="button" class="btn btn-brown" value="Capítulo XVI" id="cap16"/></div>';
+  
+  container = document.getElementById("paginas");
+
+  cap1 = document.getElementById("cap1");
+  cap1.addEventListener("click", uno);
+  
+  cap2 = document.getElementById("cap2");
+  cap2.addEventListener("click", dos);
+
+  cap3 = document.getElementById("cap3");
+  cap3.addEventListener("click", tres);
+
+  cap4 = document.getElementById("cap4");
+  cap4.addEventListener("click", cuatro);
+
+  cap5 = document.getElementById("cap5");
+  cap5.addEventListener("click", cinco);
+
+  cap6 = document.getElementById("cap6");
+  cap6.addEventListener("click", seis);
+
+  cap7 = document.getElementById("cap7");
+  cap7.addEventListener("click", siete);
+
+  cap8 = document.getElementById("cap8");
+  cap8.addEventListener("click", ocho);
+
+  cap9 = document.getElementById("cap9");
+  cap9.addEventListener("click", nueve);
+
+  cap10 = document.getElementById("cap10");
+  cap10.addEventListener("click", diez);
+
+  cap11 = document.getElementById("cap11");
+  cap11.addEventListener("click", once);
+
+  cap12 = document.getElementById("cap12");
+  cap12.addEventListener("click", doce);
+
+  cap13 = document.getElementById("cap13");
+  cap13.addEventListener("click", trece);
+
+  cap14 = document.getElementById("cap14");
+  cap14.addEventListener("click", catorce);
+
+  cap15 = document.getElementById("cap15");
+  cap15.addEventListener("click", quince);
+
+  cap16 = document.getElementById("cap16");
+  cap16.addEventListener("click", dieciseis);
+}
+
+function uno()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo I</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function dos()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo II</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function tres()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo III</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function cuatro()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo IV</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function cinco()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo V</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [69, 70, 71, 72, 73, 74, 75, 76];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function seis()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo VI</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function siete()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo VII</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [103, 104, 105, 106, 107, 108, 109, 110, 111];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function ocho()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo VIII</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function nueve()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo IX</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [143, 144, 145, 146, 147, 148, 149, 150, 151, 152];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function diez()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo X</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function once()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo XI</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function doce()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo XII</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function trece()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo XIII</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function catorce()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo XIV</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function quince()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo XV</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [337, 338, 339, 340, 341, 342, 343, 344, 345];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+function dieciseis()
+{
+  container.innerHTML = '<h2 class="brown-heading" align="center">Capítulo XVI</h2>';
+  container.innerHTML += '<input aling="left" style="width:150px;" type="button" class="btn btn-brown" value="Regresar" id="atr"/>';
+  container.innerHTML += '<br>';
+  c1 = [347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383];
+  n = c1.length;
+  for (let i=0; i<n;i++){
+    container.innerHTML += '<img id="pag'+c1[i]+'" width="600" height="912" src="pags/pag'+c1[i]+'.jpg">';
+  }
+  r = document.getElementById("atr");
+  r.addEventListener("click", inicio);
+}
+
+container = document.getElementById("paginas");
+
+cap1 = document.getElementById("cap1");
+cap1.addEventListener("click", uno);
+
+cap2 = document.getElementById("cap2");
+cap2.addEventListener("click", dos);
+
+cap3 = document.getElementById("cap3");
+cap3.addEventListener("click", tres);
+
+cap4 = document.getElementById("cap4");
+cap4.addEventListener("click", cuatro);
+
+cap5 = document.getElementById("cap5");
+cap5.addEventListener("click", cinco);
+
+cap6 = document.getElementById("cap6");
+cap6.addEventListener("click", seis);
+
+cap7 = document.getElementById("cap7");
+cap7.addEventListener("click", siete);
+
+cap8 = document.getElementById("cap8");
+cap8.addEventListener("click", ocho);
+
+cap9 = document.getElementById("cap9");
+cap9.addEventListener("click", nueve);
+
+cap10 = document.getElementById("cap10");
+cap10.addEventListener("click", diez);
+
+cap11 = document.getElementById("cap11");
+cap11.addEventListener("click", once);
+
+cap12 = document.getElementById("cap12");
+cap12.addEventListener("click", doce);
+
+cap13 = document.getElementById("cap13");
+cap13.addEventListener("click", trece);
+
+cap14 = document.getElementById("cap14");
+cap14.addEventListener("click", catorce);
+
+cap15 = document.getElementById("cap15");
+cap15.addEventListener("click", quince);
+
+cap16 = document.getElementById("cap16");
+cap16.addEventListener("click", dieciseis);
+</script>
+	
+</body>
+
+</html>
